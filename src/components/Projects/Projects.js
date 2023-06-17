@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import ProjectCards from "./ProjectsCards";
 import Particle from "../Particle";
 
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import bitsOfCode from "../../Assets/blog.png";
 
 function Projects() {
   return (
@@ -19,7 +19,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
        
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={bitsOfCode}
               isBlog={false}
               title="Bits-0f-C0de"
@@ -38,3 +38,4 @@ function Projects() {
 }
 
 export default Projects;
+
